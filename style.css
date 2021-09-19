@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(11, 22, 37);
+   
+}
+
+form {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    background-color: rgba(8, 42, 82, 0.541);
+    width: 600px;
+    height: 600px;
+   
+}
+
+.name_inp,
+.pass_inp {
+    margin-bottom: 20px;
+}
+
+.name_inp .pass_in {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    /* border-bottom: 1px solid black; */
+}
+
+.name_inp input,
+.pass_inp input {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid rgb(216, 216, 216);
+    outline: none;
+    padding: 6px 10px;
+    width: 280px;
+    background-color: transparent;
+    color: white;
+    font-size: 20;
+
+}
+
+.pass_inp {
+    display: flex;
+    align-items: center;
+
+    position: relative;
+}
+.name_inp input::placeholder,
+.pass_inp input::placeholder{
+    font-size:15px;
+    
+}
+
+#icon {
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+}
+
+.pass_inp .fas {
+    color: white;
+    font-size: 20px;
+}
+
+.submit button {
+    margin-top: 15px;
+    padding: 12px 45px;
+    text-align: center;
+    background-color: white;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-weight: 500;
+    
+}
+
+.monkeyImg {
+    height: 250px;
+    width: 250px;
+   margin-bottom: 10px;
+}
+
+.monkeyImg img {
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width:600px){
+
+    form {
+        width:90%;
+       
+    }
+ 
+
+}
